@@ -1,8 +1,12 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useContext } from 'react';
+import { AudioContext } from './AudioContext';
 
-export default function AudioPlayer({ url, activeAudio, setActiveAudio }) {
+export default function AudioPlayer({ url }) {
   const audioRef = useRef();
+  console.log(audioRef);
+  
   const [isPlaying, setIsPlaying] = useState(false);
+  const { activeAudio, setActiveAudio } = useContext(AudioContext); 
 
   const togglePlay = () => {
     if (isPlaying) {
