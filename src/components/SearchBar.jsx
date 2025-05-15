@@ -11,7 +11,7 @@ function handleSubmit(e) {
     <>
      <form className="search-bar" onSubmit={handleSubmit}>
       <input
-       className="search"
+       className="search-bar__input"
        type="text"
        placeholder="Search music..."
        value={query}
