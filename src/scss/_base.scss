@@ -1,0 +1,20 @@
+:root {
+  --color-primary: #00425A;
+  --color-primary-light: #1F8A70;
+  --color-text: #dee2e6;
+  --color-text-dark: #adb5bd;
+  --color-white: #fff;
+  --color-orange: #FC7300;
+  --color-orange-dark: #fc5c00ca;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background-color: var(--color-primary);
+}
