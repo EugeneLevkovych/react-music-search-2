@@ -8,6 +8,7 @@ export default function App() {
   const [tracks, setTracks] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [activeAudio, setActiveAudio] = useState(null);
 
   
        async function fetchMusic(query) {
@@ -48,7 +49,7 @@ export default function App() {
        {loading && <p>Loading...</p>}
        {error && <p>Error: {error}</p>}
        {!loading && !error && tracks.length === 0 && <p>Nothing found.</p>}
-      <TrackList tracks={tracks} />
+      <TrackList tracks={tracks} activeAudio={activeAudio} setActiveAudio={setActiveAudio} />
     </div>
   );
 }

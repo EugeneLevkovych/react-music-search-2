@@ -2,7 +2,7 @@ export default function SearchBar({ query, setQuery, onSearch }) {
 
 
 function handleSubmit(e) {
-  if (e) e.preventDefault();
+  e.preventDefault();
   onSearch(query);
    console.log(query);
 }

@@ -1,6 +1,6 @@
 import AudioPlayer from "./AudioPlayer";
 
-export default function TrackList({ tracks }) {
+export default function TrackList({ tracks, activeAudio, setActiveAudio }) {
     return (
       <ul className="track-list">
         {tracks.map(track => (
@@ -11,7 +11,7 @@ export default function TrackList({ tracks }) {
             />
             <h3 className="track-list__album-title">{track.title}</h3>
             <p className="track-list__artist-name">{track.artist.name}</p>
-            {track.preview && <AudioPlayer url={track.preview} />}
+            {track.preview && <AudioPlayer url={track.preview} activeAudio={activeAudio} setActiveAudio={setActiveAudio} />}
           </li>
         ))}
       </ul>
