@@ -33,7 +33,7 @@ export default function AudioPlayer({ url }) {
   return (
     <div className='player'>
       <audio ref={audioRef} src={url} onEnded={() => setIsPlaying(false)} />
-      <button className='player__button' onClick={togglePlay}>
+      <button className='player__btn-play' onClick={togglePlay}>
         {isPlaying ? 'Pause' : 'Play Preview'}
       </button>
     </div>

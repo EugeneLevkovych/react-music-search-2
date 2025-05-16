@@ -23,23 +23,3 @@
         @include mixins.active;
     }
 }
-@media only screen and (min-width: 768px) {
-    .search-bar {
-        &__input {
-            margin-left: .6rem;
-        }
-        &__button {
-            margin-right: .6rem;
-        }
-    }
-}
-@media only screen and (min-width: 1240px) {
-    .search-bar {
-        &__input {
-            margin-left: .4rem;
-        }
-        &__button {
-            margin-right: .4rem;
-        }
-    }
-}
